@@ -1,6 +1,11 @@
+/**
+ * Demo:
+ * p5(), setup, draw,
+ * createCanvas, background, fill, rect, width, height
+ */
 import p5 from 'p5';
 
-export const sketch = (p: p5) => {
+export const setupDraw = (p: p5) => {
     const x = 100;
     const y = 100;
 
@@ -11,6 +16,6 @@ export const sketch = (p: p5) => {
     p.draw = () => {
         p.background(0);
         p.fill(255);
-        p.rect(x, y, 50, 50);
+        p.rect(x, y, p.width/2, p.height/2);
     };
 };
